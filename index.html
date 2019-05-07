@@ -1,0 +1,332 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <h1>Waste Disposal Management</h1>
+  </div>
+  <div style="padding:20px">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card-style">
+          <div class="card" style="background-color:#D1F2EB">
+            <div class="card-body">
+              <h4 class="card-title">Dustbin ID: 01</h4>
+              <p class="card-text">
+                <form id="f1" style="font-size: 20px">
+                  Level: &nbsp;&nbsp;<input type="text" id="t1" size="10"
+                    style="background: transparent; border: none;" />&nbsp;&nbsp;&nbsp;&nbsp;
+                  Location:&nbsp;&nbsp; <input type="text" id="t2"
+                    style="background: transparent; border: none;" /></br></br></form>
+                <div style="font-size: 20px">
+                  Days since last emptied: &nbsp;&nbsp;<input type="text" size="8" id="t4"
+                    style="background: transparent; border: none;" /> &nbsp;
+                  <input type="button" onclick="reset()" value="Reset"></input></br>
+                </div>
+              </p>
+              <div id="tr" style="background: #E74C3C; width: 200px; height:50px; padding: 20px; margin-bottom:20px">
+              </div>
+              <a href="https://bit.ly/2H2g9An" target="_blank" class="btn btn-primary" style="font-size: 20px;">See
+                Location</a></br>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card-style">
+          <div class="card" style="background-color:#D1F2EB">
+            <div class="card-body">
+              <h4 class="card-title">Dustbin ID: 02 </h4>
+              <p class="card-text">
+                <form style="font-size: 20px">
+                  Level: &nbsp;&nbsp;<input type="text" value="Low" size="10"
+                    style="background: transparent; border: none;" />&nbsp;&nbsp;&nbsp;&nbsp;
+                  Location: &nbsp;&nbsp;<input type="text" value="Akota"
+                    style="background: transparent; border: none;" /></br></br>
+                  Days since last emptied: &nbsp;&nbsp;<input type="text" size="8"
+                    style="background: transparent; border: none;" /> &nbsp;
+                  <input type="button" value="Reset"></input></br>
+                </form>
+              </p>
+              <div style="background: #58D68D; width: 200px; height:50px; padding: 20px; margin-bottom:20px">
+              </div>
+              <a href="https://bit.ly/2J22soK" target="_blank" class="btn btn-primary" style="font-size: 20px;">See
+                Location</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card-style">
+          <div class="card" style="background-color:#D1F2EB">
+            <div class="card-body">
+              <h4 class="card-title">Dustbin ID: 03</h4>
+              <p class="card-text">
+                <form style="font-size: 20px">
+                  Level: &nbsp;&nbsp;<input type="text" value="Medium" size="10"
+                    style="background: transparent; border: none;" />&nbsp;&nbsp;&nbsp;&nbsp;
+                  Location: &nbsp;&nbsp;<input type="text" value="Sayajigunj"
+                    style="background: transparent; border: none;" /></br></br>
+                  Days since last emptied: &nbsp;&nbsp;<input type="text" size="8"
+                    style="background: transparent; border: none;" /> &nbsp;
+                  <input type="button" value="Reset"></input></br>
+                </form>
+              </p>
+              <div style="background: #F7DC6F; width: 200px; height:50px; padding: 20px; margin-bottom:20px">
+              </div>
+              <a href="https://bit.ly/2vDH0he" target="_blank" class="btn btn-primary">See Location</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card-style">
+          <div class="card" style="background-color:#D1F2EB">
+            <div class="card-body">
+              <h4 class="card-title">Dustbin ID: 04</h4>
+              <p class="card-text">
+                <form style="font-size: 20px">
+                  Level: &nbsp;&nbsp;<input type="text" value="High" size="10"
+                    style="background: transparent; border: none;" />&nbsp;&nbsp;&nbsp;&nbsp;
+                  Location: &nbsp;&nbsp;<input type="text" value="Alkapuri"
+                    style="background: transparent; border: none;" /></br></br>
+                  Days since last emptied: &nbsp;&nbsp;<input type="text" size="8"
+                    style="background: transparent; border: none;" /> &nbsp;
+                  <input type="button" value="Reset"></input></br>
+                </form>
+              </p>
+              <div style="background: #E74C3C; width: 200px; height:50px; padding: 20px; margin-bottom:20px">
+              </div>
+              <a href="https://bit.ly/2LoVnAE" target="_blank" class="btn btn-primary">See Location</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card-style">
+          <div class="card" style="background-color:#D1F2EB">
+            <div class="card-body">
+              <h4 class="card-title">Dustbin ID: 05 </h4>
+              <p class="card-text">
+                <form style="font-size: 20px">
+                  Level: &nbsp;&nbsp;<input type="text" value="Low" size="10"
+                    style="background: transparent; border: none;" />&nbsp;&nbsp;&nbsp;&nbsp;
+                  Location: &nbsp;&nbsp;<input type="text" value="Akota"
+                    style="background: transparent; border: none;" /></br></br>
+                  Days since last emptied: &nbsp;&nbsp;<input type="text" size="8"
+                    style="background: transparent; border: none;" /> &nbsp;
+                  <input type="button" value="Reset"></input></br>
+                </form>
+              </p>
+              <div style="background: #58D68D; width: 200px; height:50px; padding: 20px; margin-bottom:20px">
+              </div>
+              <a href="https://bit.ly/2vDku84" target="_blank" class="btn btn-primary">See Location</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card-style">
+          <div class="card" style="background-color:#D1F2EB">
+            <div class="card-body">
+              <h4 class="card-title">Dustbin ID: 06 </h4>
+              <p class="card-text">
+                <form style="font-size: 20px">
+                  Level: &nbsp;&nbsp;<input type="text" value="Medium" size="10"
+                    style="background: transparent; border: none;" />&nbsp;&nbsp;&nbsp;&nbsp;
+                  Location: &nbsp;&nbsp;<input type="text" value="Ellorapark"
+                    style="background: transparent; border: none;" /></br></br>
+                  Days since last emptied: &nbsp;&nbsp;<input type="text" size="8"
+                    style="background: transparent; border: none;" /> &nbsp;
+                  <input type="button" value="Reset"></input></br>
+                </form>
+              </p>
+              <div style="background: #F7DC6F; width: 200px; height:50px; padding: 20px; margin-bottom:20px">
+              </div>
+              <a href="https://bit.ly/2H2SGAz" target="_blank" class="btn btn-primary">See Location</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card-style">
+          <div class="card" style="background-color:#D1F2EB">
+            <div class="card-body">
+              <h4 class="card-title">Dustbin ID: 07 </h4>
+              <p class="card-text">
+                <form style="font-size: 20px">
+                  Level: &nbsp;&nbsp;<input type="text" value="High" size="10"
+                    style="background: transparent; border: none;" />&nbsp;&nbsp;&nbsp;&nbsp;
+                  Location: &nbsp;&nbsp;<input type="text" value="Akota"
+                    style="background: transparent; border: none;" /></br></br>
+                  Days since last emptied: &nbsp;&nbsp;<input type="text" size="8"
+                    style="background: transparent; border: none;" /> &nbsp;
+                  <input type="button" value="Reset"></input></br>
+                </form>
+              </p>
+              <div style="background: #E74C3C; width: 200px; height:50px; padding: 20px; margin-bottom:20px">
+              </div>
+              <a href="https://bit.ly/2vDku84" target="_blank" class="btn btn-primary">See Location</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card-style">
+          <div class="card" style="background-color:#D1F2EB">
+            <div class="card-body">
+              <h4 class="card-title">Dustbin ID: 08 </h4>
+              <p class="card-text">
+                <form style="font-size: 20px">
+                  Level: &nbsp;&nbsp;<input type="text" value="Low" size="10"
+                    style="background: transparent; border: none;" />&nbsp;&nbsp;&nbsp;&nbsp;
+                  Location: &nbsp;&nbsp;<input type="text" value="Racecourse"
+                    style="background: transparent; border: none;" /></br></br>
+                  Days since last emptied: &nbsp;&nbsp;<input type="text" size="8"
+                    style="background: transparent; border: none;" /> &nbsp;
+                  <input type="button" value="Reset"></input></br>
+                </form>
+              </p>
+              <div style="background: #58D68D; width: 200px; height:50px; padding: 20px; margin-bottom:20px">
+              </div>
+              <a href="https://bit.ly/2YbZMbH" target="_blank" class="btn btn-primary">See Location</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card-style">
+          <div class="card" style="background-color:#D1F2EB">
+            <div class="card-body">
+              <h4 class="card-title">Dustbin ID: 09 </h4>
+              <p class="card-text">
+                <form style="font-size: 20px">
+                  Level: &nbsp;&nbsp;<input type="text" value="High" size="10"
+                    style="background: transparent; border: none;" />&nbsp;&nbsp;&nbsp;&nbsp;
+                  Location: &nbsp;&nbsp;<input type="text" value="Alkapuri"
+                    style="background: transparent; border: none;" /></br></br>
+                  Days since last emptied: &nbsp;&nbsp;<input type="text" size="8"
+                    style="background: transparent; border: none;" /> &nbsp;
+                  <input type="button" value="Reset"></input></br>
+                </form>
+              </p>
+              <div style="background: #E74C3C; width: 200px; height:50px; padding: 20px; margin-bottom:20px">
+              </div>
+              <a href="https://bit.ly/2LoVnAE" target="_blank" class="btn btn-primary">See Location</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card-style">
+          <div class="card" style="background-color:#D1F2EB">
+            <div class="card-body">
+              <h4 class="card-title">Dustbin ID: 10 </h4>
+              <p class="card-text">
+                <form style="font-size: 20px">
+                  Level: &nbsp;&nbsp;<input type="text" value="Medium" size="10"
+                    style="background: transparent; border: none;" />&nbsp;&nbsp;&nbsp;&nbsp;
+                  Location: &nbsp;&nbsp;<input type="text" value="Sama"
+                    style="background: transparent; border: none;" /></br></br>
+                  Days since last emptied: &nbsp;&nbsp;<input type="text" size="8"
+                    style="background: transparent; border: none;" /> &nbsp;
+                  <input type="button" value="Reset"></input></br>
+                </form>
+              </p>
+              <div style="background: #F7DC6F; width: 200px; height:50px; padding: 20px; margin-bottom:20px">
+              </div>
+              <a href="#" class="btn btn-primary">See Location</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card-style">
+          <div class="card" style="background-color:#D1F2EB">
+            <div class="card-body">
+              <h4 class="card-title">Dustbin ID: 11</h4>
+              <p class="card-text">
+                <form style="font-size: 20px">
+                  Level: &nbsp;&nbsp;<input type="text" value="Low" size="10"
+                    style="background: transparent; border: none;" />&nbsp;&nbsp;&nbsp;&nbsp;
+                  Location: &nbsp;&nbsp;<input type="text" value="Karelibaugh"
+                    style="background: transparent; border: none;" /></br></br>
+                  Days since last emptied: &nbsp;&nbsp;<input type="text" size="8"
+                    style="background: transparent; border: none;" /> &nbsp;
+                  <input type="button" value="Reset"></input></br>
+                </form>
+              </p>
+              <div style="background: #58D68D; width: 200px; height:50px; padding: 20px; margin-bottom:20px">
+              </div>
+              <a href="https://bit.ly/2H2g9An" target="_blank" class="btn btn-primary">See Location</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card-style">
+          <div class="card" style="background-color:#D1F2EB">
+            <div class="card-body">
+              <h4 class="card-title">Dustbin ID: 12 </h4>
+              <p class="card-text">
+                <form style="font-size: 20px">
+                  Level: &nbsp;&nbsp;<input type="text" value="Medium" size="10"
+                    style="background: transparent; border: none;" />&nbsp;&nbsp;&nbsp;&nbsp;
+                  Location: &nbsp;&nbsp;<input type="text" value="Old Padra"
+                    style="background: transparent; border: none;" /></br></br>
+                  Days since last emptied: &nbsp;&nbsp;<input type="text" size="8"
+                    style="background: transparent; border: none;" /> &nbsp;
+                  <input type="button" value="Reset"></input></br>
+                </form>
+              </p>
+              <div style="background: #F7DC6F; width: 200px; height:50px; padding: 20px; margin-bottom:20px">
+              </div>
+              <a href="https://bit.ly/2HaoPFh" target="_blank" class="btn btn-primary">See Location</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+  </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAEaIeUPYF9xiQf_KSbmkc8-uYqs9llsqY",
+    authDomain: "waste-disposal-management.firebaseapp.com",
+    databaseURL: "https://waste-disposal-management.firebaseio.com",
+    projectId: "waste-disposal-management",
+    storageBucket: "waste-disposal-management.appspot.com",
+    messagingSenderId: "480404263339"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="app.js"></script>
+
+</html>
